@@ -20,6 +20,8 @@ def main():
     with open("/output/entry.txt", "w", encoding="utf-8") as f:
         f.write(ENTRY)
     os.chmod("/output/entry.txt", 0o644)
+    print(f"wrote {len(ENTRY)} chars to /output/entry.txt")
+    print(ENTRY)
 
 
 if __name__ == "__main__":
